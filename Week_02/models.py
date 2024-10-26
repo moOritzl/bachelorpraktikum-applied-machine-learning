@@ -59,7 +59,7 @@ class LinRegNormEq:
         A = X.T @ X
         b = X.T @ y
 
-        # we need to avoid zeros on the main diagonal for gauss and make sure the Matrix is positive definite for cholesky, so we regulate it (add λI do make it more stable)
+        # we need to avoid zeros on the main diagonal for gauss and make sure the Matrix is positive definite for cholesky, so we regulate it (add $\lambda I$ to make it more stable)
         A += 1e-8 * np.eye(A.shape[0])
 
         if algorithm == 'gauss':
@@ -68,8 +68,6 @@ class LinRegNormEq:
             self.B = self._cholesky(A, b)
         else:
             self.B = self._qr(A, b)
-
-        # print(f'Shape of B after {algorithm}: {self.B.shape}')  # for debugging reasons
 
     def predict(self, X):
         """
@@ -123,6 +121,12 @@ class LinRegNormEq:
 
     @staticmethod
     def _is_symmetric(matrix, tol=1e-10):
+        """
+        Check if a given matrix is symmetric.
+        :param matrix: The matrix to check.
+        :param tol: Tolerance.
+        :return: True if the matrix is symmetric, False otherwise.
+        """
         return np.allclose(matrix, matrix.T, atol=tol)
 
     @staticmethod
@@ -138,17 +142,17 @@ class LinRegNormEq:
         n = A.shape[0]
         L = np.zeros_like(A)
 
-        # inspired from https://github.com/TayssirDo/Cholesky-decomposition, but adjusted to calculate the lower triangular matrix
+        # inspired from https://github.com/TayssirDo/Cholesky-decomposition
         for i in range(n):
             L[i, i] = sqrt(A[i, i])
             for j in range(i + 1, n):
                 L[j, i] = A[j, i] / L[i, i]
                 A[j, j:] = A[j, j:] - L[j, i] * L[i, j:]
 
-        # Solve L * y = b
+        # Solve L @ y = b
         y = np.linalg.solve(L, b)
 
-        # Solve L.T * B = y
+        # Solve L.T @ B = y
         B = np.linalg.solve(L.T, y)
 
         return B
