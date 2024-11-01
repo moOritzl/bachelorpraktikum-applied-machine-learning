@@ -11,7 +11,7 @@ The practical course consists of the following topics:
 2. [Week 02](./Week_02): **Linear Regression via Normal Equations**
    - Dataset Exploration
    - Linear Regression using different algorithms for solving the normal equations
-3. [Week 02](./Week_02): **Linear Regression via Gradient Descent**
+3. [Week 03](./Week_03): **Linear Regression via Gradient Descent**
    - Data Preprocessing
    - Linear Regression model via Gradient Descent
 
