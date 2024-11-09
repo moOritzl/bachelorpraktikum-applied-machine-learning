@@ -17,4 +17,4 @@ def split_data(X, y, frac, random_state=69):
     Xtest = X.drop(Xtrain.index)
     ytrain = y.loc[Xtrain.index]
     ytest = y.loc[Xtest.index]
-    return Xtrain, Xtest, ytrain, ytest
+    return Xtrain.values, Xtest.values, ytrain.values.flatten(), ytest.values.flatten()
