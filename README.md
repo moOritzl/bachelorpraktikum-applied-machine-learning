@@ -9,45 +9,55 @@ and Scikit-learn.
 
 The practical course consists of the following topics:
 
-1. [Week 01](./Week_01): **Introduction and Simple Linear Regression**
-    - Overview of machine learning concepts
-    - Introduction to Python libraries: NumPy, Pandas, Scikit-learn, Matplotlib
+### Introduction and Simple Linear Regression ([Week 01](./Week_01))
 
-2. [Week 02](./Week_02): **Linear Regression via Normal Equations**
-    - Dataset Exploration
-    - Linear Regression using different algorithms for solving the normal equations
+- Overview of machine learning concepts
+- Introduction to Python libraries: NumPy, Pandas, Scikit-learn, Matplotlib
 
-3. [Week 03](./Week_03): **Linear Regression via Gradient Descent**
-    - Data Preprocessing
-    - Linear Regression model via Gradient Descent
+### Linear Regression via Normal Equations ([Week 02](./Week_02))
 
-4. [Week 04](./Week_04): **Linear Classification with AdaGrad**
-    - Implementation of a linear classifier
-    - Adaptive gradient descent using AdaGrad
+- Dataset Exploration
+- Linear Regression using different algorithms for solving the normal equations
 
-5. [Week 05](./Week_05): **Regularization and Hyperparameter Tuning**
-    - Ridge Regression with stochastic gradient descent
-    - Tuning hyperparameters and comparing models
+### Linear Regression via Gradient Descent ([Week 03](./Week_03))
 
-6. [Week 06](./Week_06): **Generalized Linear Models and Polynomial Regression**
-    - Ordinary Least Squares, Ridge, and LASSO Regression
-    - Polynomial Regression with Scikit-learn
+- Data Preprocessing
+- Linear Regression model via Gradient Descent
 
-7. [Week 07](./Week_07): **K-Nearest Neighbors (KNN)**
-    - Implementation of KNN
-    - Cross-validation to find the optimal value for K
+### Linear Classification with AdaGrad ([Week 04](./Week_04))
 
-8. [Week 08](./Week_08): **Recommender Systems**
-    - Matrix factorization methods
-    - Evaluation of recommendation models using MovieLens dataset
+- Implementation of a linear classifier
+- Adaptive gradient descent using AdaGrad
 
-9. [Week 09](./Week_09): **Spam Filter with Support Vector Machines (SVM)**
-    - Building a spam filter using SVM
-    - Comparing SVM performance with other classifiers
+### Regularization and Hyperparameter Tuning ([Week 05](./Week_05))
 
-10. [Week 10](./Week_10): **K-Means Clustering**
-    - Implementation of K-Means
-    - Elbow Method for finding the optimal number of clusters
+- Ridge Regression with stochastic gradient descent
+- Tuning hyperparameters and comparing models
+
+### Generalized Linear Models and Polynomial Regression ([Week 06](./Week_06))
+
+- Ordinary Least Squares, Ridge, and LASSO Regression
+- Polynomial Regression with Scikit-learn
+
+### K-Nearest Neighbors (KNN) ([Week 07](./Week_07))
+
+- Implementation of KNN
+- Cross-validation to find the optimal value for K
+
+### Recommender Systems ([Week 08](./Week_08))
+
+- Matrix factorization methods
+- Evaluation of recommendation models using MovieLens dataset
+
+### Spam Filter with Support Vector Machines (SVM) ([Week 09](./Week_09))
+
+- Building a spam filter using SVM
+- Comparing SVM performance with other classifiers
+
+### K-Means Clustering ([Week 10](./Week_10))
+
+- Implementation of K-Means
+- Elbow Method for finding the optimal number of clusters
 
 ---
 
