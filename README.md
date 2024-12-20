@@ -23,31 +23,31 @@ The practical course consists of the following topics:
 
 4. [Week 04](./Week_04): **Linear Classification with AdaGrad**
     - Implementation of a linear classifier
-    - Adaptive gradient descent using AdaGrad&#8203;:contentReference[oaicite:0]{index=0}
+    - Adaptive gradient descent using AdaGrad
 
 5. [Week 05](./Week_05): **Regularization and Hyperparameter Tuning**
     - Ridge Regression with stochastic gradient descent
-    - Tuning hyperparameters and comparing models&#8203;:contentReference[oaicite:1]{index=1}
+    - Tuning hyperparameters and comparing models
 
 6. [Week 06](./Week_06): **Generalized Linear Models and Polynomial Regression**
     - Ordinary Least Squares, Ridge, and LASSO Regression
-    - Polynomial Regression with Scikit-learn&#8203;:contentReference[oaicite:2]{index=2}
+    - Polynomial Regression with Scikit-learn
 
 7. [Week 07](./Week_07): **K-Nearest Neighbors (KNN)**
     - Implementation of KNN
-    - Cross-validation to find the optimal value for K&#8203;:contentReference[oaicite:3]{index=3}
+    - Cross-validation to find the optimal value for K
 
 8. [Week 08](./Week_08): **Recommender Systems**
     - Matrix factorization methods
-    - Evaluation of recommendation models using MovieLens dataset&#8203;:contentReference[oaicite:4]{index=4}
+    - Evaluation of recommendation models using MovieLens dataset
 
 9. [Week 09](./Week_09): **Spam Filter with Support Vector Machines (SVM)**
     - Building a spam filter using SVM
-    - Comparing SVM performance with other classifiers&#8203;:contentReference[oaicite:5]{index=5}
+    - Comparing SVM performance with other classifiers
 
 10. [Week 10](./Week_10): **K-Means Clustering**
 - Implementation of K-Means
-- Elbow Method for finding the optimal number of clusters&#8203;:contentReference[oaicite:6]{index=6}
+- Elbow Method for finding the optimal number of clusters
 
 ---
 
