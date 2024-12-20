@@ -2,7 +2,7 @@
 
 ## Overview
 
-Preprocess datasets and implement linear regression using gradient descent. Includes fixed and dynamic step length
+In [this notebook](./Data_Processing_Gradient_Descent.ipynb), we preprocess datasets and implement linear regression using gradient descent, including fixed and dynamic step length
 methods.
 
 ## Datasets
