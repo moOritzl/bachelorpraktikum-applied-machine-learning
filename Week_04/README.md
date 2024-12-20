@@ -1,25 +1,32 @@
-# Linear Classification with Gradient Descent and AdaGrad
+# Linear Classification with AdaGrad
 
 ## Overview
 
-This project explores linear classification using two optimization techniques: Bold Driver and AdaGrad.
+In [this notebook](./Linear_Classification_AdaGrad.ipynb), we implement linear classification using gradient descent and
+AdaGrad for adaptive step length. The notebook covers data preprocessing, model training, and convergence analysis for
+two datasets: bank marketing and occupancy detection.
 
-1. **Bold Driver**: A linear classifier using stochastic gradient descent with adaptive step length for efficient
-   convergence.
-2. **AdaGrad**: A linear classifier with adaptive step length per parameter, using different initial learning rates to
-   assess performance.
+## Datasets
 
-## Data and Preprocessing
+- **Bank Marketing Dataset**:  
+  Contains features related to direct marketing campaigns for a bank.
 
-- **Datasets**: Bank Marketing and Occupancy Detection.
-- **Steps**: Dropped irrelevant features, replaced missing values, applied One-Hot Encoding, and normalized data.
+- **Occupancy Detection Dataset**:  
+  Consists of features related to indoor environmental conditions.
 
-## Results
+## Preprocessing
 
-- **Bold Driver**: Smooth convergence, effective for both datasets with minimal tuning.
-- **AdaGrad**: Sensitive to learning rates; showed mixed performance depending on initial rate.
+- Dropped unnecessary features (e.g., dates, categorical columns).
+- Handled missing values by filling with 0.
+- One-hot encoding for categorical data.
+- Min-max normalization applied to all features.
+- Data split: 80% training, 20% testing.
 
-## Conclusion
+## Models
 
-- **Bold Driver** is more stable and requires less tuning compared to **AdaGrad**, which is sensitive to learning rate
-  choices.
+- **Gradient Descent with Bold Driver**
+- **AdaGrad for Adaptive Step Length**
+
+## Evaluation
+
+Metrics: Training loss difference, test log-loss, convergence plots.
