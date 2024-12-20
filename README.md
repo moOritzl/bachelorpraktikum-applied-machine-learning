@@ -46,8 +46,8 @@ The practical course consists of the following topics:
     - Comparing SVM performance with other classifiers
 
 10. [Week 10](./Week_10): **K-Means Clustering**
-- Implementation of K-Means
-- Elbow Method for finding the optimal number of clusters
+    - Implementation of K-Means
+    - Elbow Method for finding the optimal number of clusters
 
 ---
 
